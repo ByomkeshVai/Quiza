@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import stepperReducers from "./features/stepper/stepperSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    stepper: stepperReducers,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
