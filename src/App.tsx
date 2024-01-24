@@ -1,8 +1,12 @@
+import NavbarDefault from "./components/ui/Navbar/Navbar";
+import Tabbar from "./components/ui/Tabs/Tabbar";
+
 function App() {
   return (
-    <>
-      <h2>this is app</h2>
-    </>
+    <div className="container mx-auto">
+      <NavbarDefault />
+      <Tabbar />
+    </div>
   );
 }
 
