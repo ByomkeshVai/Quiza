@@ -28,6 +28,8 @@ const Stepper = ({ steps }: StepperProps) => {
           </Step>
         ))}
       </MTStepper>
+
+      <div className="mt-16">{steps[activeStep].component}</div>
     </div>
   );
 };

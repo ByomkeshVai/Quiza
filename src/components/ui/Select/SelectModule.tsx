@@ -2,8 +2,8 @@ import { Select, Option } from "@material-tailwind/react";
 
 const SelectModule = () => {
   return (
-    <div className="w-72">
-      <Select placeholder={""} label="Select Version">
+    <div className="">
+      <Select placeholder={""} label="Select Module">
         <Option>Material Tailwind HTML</Option>
         <Option>Material Tailwind React</Option>
         <Option>Material Tailwind Vue</Option>

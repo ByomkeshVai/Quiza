@@ -8,6 +8,22 @@ import {
 } from "@material-tailwind/react";
 import { Square3Stack3DIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import Cards from "../Card/Cards";
+import SelectModule from "../Select/SelectModule";
+import { AddQuizForm } from "../../form/AddQuizForm";
+import Stepper from "../Stepper/Stepper";
+
+const steps = [
+  {
+    value: 0,
+    name: "Select Module",
+    component: <SelectModule />,
+  },
+  {
+    value: 1,
+    name: "Add Quiz",
+    component: <AddQuizForm />,
+  },
+];
 
 const data = [
   {
@@ -26,7 +42,7 @@ const data = [
     icon: UserCircleIcon,
     desc: (
       <Cards>
-        <h2>hello quiz</h2>
+        <Stepper steps={steps} />
       </Cards>
     ),
   },
