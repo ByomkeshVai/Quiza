@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import stepperReducers from "./features/stepper/stepperSlice";
 import moduleReducers from "./features/module/moduleSlice";
+import quizReducers from "./features/quiz/quizSlice";
 import { baseApi } from "./api/baseApi";
 
 export const store = configureStore({
@@ -8,6 +9,7 @@ export const store = configureStore({
     [baseApi.reducerPath]: baseApi.reducer,
     stepper: stepperReducers,
     module: moduleReducers,
+    quiz: quizReducers,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(baseApi.middleware),
